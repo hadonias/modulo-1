@@ -1,0 +1,39 @@
+body {
+    background-image: url('../imagens/fundo2.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border: 20p inset;
+    border-radius: 50px;
+}
+
+main {
+    color: rgb(14, 5, 5);
+    font-size: 35px;
+    text-align: center;
+    margin: 280px;
+    border-radius: 30px;
+    line-height: 1;
+    
+}
+
+
+
+.personagens {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 32px;
+    flex-direction: row;
+    
+}
+
+footer {
+    position:fixed;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font-size: 25px;
+}

@@ -1,0 +1,43 @@
+main {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin: 280px;
+    border: 1px inset #05ee24;
+    border-radius: 30px;
+    line-height: 1;
+    background-color: rgb(6, 172, 6);
+    opacity: 0.8;
+    
+}
+
+
+.botao {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px inset #faf3f3;
+    border-radius: 10px;
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    text-align: center;
+
+}
+
+body {
+    background: url('./fundo.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 55px 0 ;
+    color: white;
+    font-size: 20px;
+}
