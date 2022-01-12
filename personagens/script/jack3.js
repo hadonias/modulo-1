@@ -12,7 +12,7 @@ function redirecionarParaFase(numEscolha) {
   if (numEscolha == 1) {
     window.location.replace('./gameover.html')
   } else if (numEscolha == 2) {
-    window.location.assign('./vitoria.html')
+    window.location.assign('./jackwin.html')
   }
 }
 
@@ -20,20 +20,20 @@ function selecionarPersonagem(event) {
   event.preventDefault()
   var escolha = parseInt(
     prompt(`Faça sua escolha:
-  1 - ir sem olhar porque está tudo dentro do carrinho, pronto para zarpar!
-  2 - pedir para seu ajudante conferir junto com você se está tudo dentro do carrinho, e fazer ultimo check list para então zarpar.
+  1 - agora que conheçeu a fabrica, ir embora e dizer a todos com chegar nela?
+  2 - ir de encontro ao papai noel e pedir para ele te deixar ser seu ajudante e realizar seu grande sonho de trazer a felicidade a todos.
   
   Obs: Selecione baseado no número da escolha!`)
   )
 
   if (escolha == 1) {
     alert(
-      'Você zarpou com seu fiel ajudante porém quando chegou na primeira casa se deu conta de que esqueceu a bolsa de presente =o, NOOO !!! assim ninguém recebeu presente e toda a alegria do natal se acabou =( . '
+      ' você escolheu sair da fabrica, más se arrependeu no fim e decidir voltar, no meio do caminho os doendes te encontraram e você foi capturado. '
     )
     redirecionarParaFase(escolha)
   } else if (escolha == 2) {
     alert(
-      'você pediu para seu ajudante jack frost te ajudar a conferir tudo, e ele lhe diz que está quase tudo pronto, só falta a bolsa de presentes para as criaças do mundo, uffa, foi por pouco mas está tudo pronto, então ZARPAR !!'
+      'você foi de encontro ao bom noel, pediu humildemente para ele te deixar ser um ajudante em sua aventura,  '
     )
     redirecionarParaFase(escolha)
   } else {
