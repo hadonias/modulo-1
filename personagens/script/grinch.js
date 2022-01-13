@@ -3,12 +3,11 @@ var button = document.querySelector('#button')
 
 button.addEventListener('click', selecionarPersonagem)
 
-
 function redirecionarParaFase(numEscolha) {
   if (numEscolha == 1) {
     window.location.replace('./gameover.html')
   } else if (numEscolha == 2) {
-    window.location.assign('./noel3.html')
+    window.location.assign('grinch2.html')
   }
 }
 
@@ -16,20 +15,20 @@ function selecionarPersonagem(event) {
   event.preventDefault()
   var escolha = parseInt(
     prompt(`Faça sua escolha:
-  1 - ir sem alimentar.
-  2 - alimentar e dar agua para seguir com a longa noite.
+    1 — ficar em casa com seu amado cachorro Max e aproveitar o natal como todo mundo.
+    2 — ir em direção a fábrica do noel e estragar os planos dele para entregar presentes, trazendo tristeza para todos na manhã de natal.
   
   Obs: Selecione baseado no número da escolha!`)
   )
 
   if (escolha == 1) {
     alert(
-      'Você não alimentou as renas o dia todo, assim elas ficaram muito cansadas e com fome e pararam no meio do caminho, sendo assim ninguém recebeu presente e toda a alegria do natal se acabou =( . '
+      'Você ficou em casa, noel entregou os presentes, todas as pessoas da cidade gritando de felicidade oque lhe trouxe ainda mais raiva e ódio sobre o natal. '
     )
     redirecionarParaFase(escolha)
   } else if (escolha == 2) {
     alert(
-      'você alimentou todas as renas, escovou os pelo delas, deixou elas prontas para sair, e foi acertar os ultimos detalhes para então sair para noite especial de natal'
+      'Você decidiu que se você não tem natal com presentes, então ninguém também terá, e vai em direção a fábrica do noel..'
     )
     redirecionarParaFase(escolha)
   } else {
